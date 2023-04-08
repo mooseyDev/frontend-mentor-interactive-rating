@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* containers */
+.globalcontainer {
+    background-image: linear-gradient(180deg, #252D37, #252d3794);
+    height: 25rem;
+    width: 25rem;
+    border-radius: 2rem;
+    padding: 1.8rem;
+    margin: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.flexcontainer {
+    display: flex;
+}
+.iconcontainer {
+    height: 3rem;
+    width: 3rem;
+    background-color: #2f3842;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.ratingbuttons {
+    justify-content: space-around;
+}
+.ratingbutton {
+    border-radius: 2rem;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    background-color: #2b333e;
+    color: rgba(255, 255, 255, 0.566);
+    cursor: pointer;
+}
+.submitbutton {
+    justify-content: center;
+    height: 3rem;
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    background-color: #FB7413;
+    color: rgba(255, 255, 255, 0.868);
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+/* element styling */
+h5 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* inline styling */
+.whitetext {
+    color: rgb(244, 241, 241);
+}
+.paragraphtext {
+    color: rgba(255, 255, 255, 0.508);
+}
+
+/* on hover */
+.ratingbutton:hover {
+    background-color: #FB7413;
+    transition: 0.2s;
+}
+.ratingbutton.active {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #FB7413;
+    color:#FB7413;
+    font-weight: bold;
+    height: 3.2rem;
+    width: 3.2rem;
+}
+.submitbutton:hover {
+    background-color: rgba(255, 255, 255, 0.784);
+    color: #FB7413;
+    transition: 0.2s;
+}
+
+/* submit view */
+#submitView {
+    display: none;
+    align-items: center;
+}
+.dynamicRatingBox {
+    background-color: #364352bd;
+    border-radius: 20rem;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dynamicRatingText {
+    color:#FB7413;
+    font-weight: lighter;
+}
+#submitParagraphText {
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="styles.css"/> 
+</head>
+<body>
+  <div class="globalcontainer" id="ratingView">
+    <div class="flexcontainer icon">
+      <div class="iconcontainer">
+        <img src="./images/icon-star.svg" alt="" class="icon">
+      </div>
+    </div>
+    <div class="flexcontainer title">
+      <h5 class="titletext whitetext">
+        How did we do?
+      </h5>
+    </div>
+    <div class="flexcontainer paragraphtext">
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    </div>
+    <div class="flexcontainer ratingbuttons">
+      <button class="ratingbutton" value="1" onclick="rate(1)">1</button>
+      <button class="ratingbutton" value="2" onclick="rate(2)">2</button>
+      <button class="ratingbutton" value="3" onclick="rate(3)">3</button>
+      <button class="ratingbutton" value="4" onclick="rate(4)">4</button>
+      <button class="ratingbutton" value="5" onclick="rate(5)">5</button>
+    </div>
+    <div class="flexcontainer submitbutton">
+      <button class="submitbutton" onclick="submitRating()">SUBMIT</button>
+    </div>
+  </div>
+  <div class="globalcontainer" id="submitView">
+    <div class="flexcontainer thankYouImg">
+      <img src="./images/illustration-thank-you.svg">
+    </div>
+    <div class="flexcontainer dynamicRatingBox">
+      <span class="dynamicRatingText">You rated us out of 5</span>
+    </div>
+    <div class="flexcontainer thankYouTitle">
+      <h5 class="titletext whitetext">Thank you!</h5>
+    </div>
+    <div class="flexcontainer paragraphtext">
+      <p id="submitParagraphText">We appreciate you taking the time to give a rating.
+        If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
